@@ -1,6 +1,9 @@
 # UnityNamedArray
+
 Let SerializeField can display more useful information which is ICollection
-為了有時候跨職能(ex.企劃/程式)的欄位設計能更有效的溝通，針對序列化的資料集合欄位做一個非常簡易的顯示優化
+
+為了有時候跨職能(ex.企劃/程式)的欄位設計能更有效的溝通，</br>
+針對序列化的資料集合欄位做一個非常簡易的顯示優化</br>
 
 # How To Use
 #### 1. Let your field can display on Inspector Window.
@@ -12,13 +15,18 @@ Let SerializeField can display more useful information which is ICollection
 #### 3. Choose a display type which you wanted.
 ##### 選一種你想要的顯示方法
 
-A.Display by typical string
+A. Display by typical string
 
     [NameArray("Your Typical Prefix")]
 
-B.Display by Enum
+B. Display by Enum
 
     [NameArray(typeof(YourEnum)]
+    
+C. Both all
+    
+    [NameArray(typeof(YourEnum),"Your Typical Prefix")]
+    
 
 # Another
 #### 其他一些實作上遇到的問題及情境
@@ -26,4 +34,4 @@ B.Display by Enum
 #### 1. Field information is doesn't want to mapping Enum start from first value
 ##### 顯示所對應的列舉不希望從第一個代表值開始
 
-    [NameArray(typeof(YourEnum), offestIndex)]
+    [NameArray(typeof(YourEnum), "Your Typical Prefix", startOffestIndex)]
