@@ -12,6 +12,8 @@ Let SerializeField can display more useful information which is ICollection
 #### 2. Find target collection which you want to modify.
 ##### 找到你想要修改的欄位，理論上他應該是一維陣列或是繼承了ICollection的集合類別
 
+![Before Edit](./Before.png)
+
 #### 3. Choose a display type which you wanted.
 ##### 選一種你想要的顯示方法
 
@@ -27,6 +29,9 @@ C. Both all
     
     [NameArray(typeof(YourEnum),"Your Typical Prefix")]
     
+#### 4. It's done.
+![After Edit](./After.png)
+
 
 # Another
 #### 其他一些實作上遇到的問題及情境
