@@ -16,16 +16,19 @@ Let SerializeField can display more useful information which is ICollection
 
 #### 3. Choose a display type which you wanted.
 ##### 選一種你想要的顯示方法
-
-A. Display by typical string
+A. Display by typical string / 顯示自定義前綴字
 
     [NameArray("Your Typical Prefix")]
+    
+B. Display by Customized format / 顯示格式化
 
-B. Display by Enum
+    [NameArray("Your Customized {0} format ", true)]
+
+C. Display by Enum / 顯示列舉
 
     [NameArray(typeof(YourEnum)]
     
-C. Both all
+D. Both all
     
     [NameArray(typeof(YourEnum),"Your Typical Prefix")]
     
